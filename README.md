@@ -1,2 +1,1 @@
-# ruby-pro-tips
-Ruby Pro Tips
+# Ruby Pro Tips
