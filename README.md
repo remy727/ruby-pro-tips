@@ -49,3 +49,10 @@ class User < ApplicationRecord
   User.good_recent_orders.good_top_rated.count # => 1
 end
 ```
+
+###
+```rb
+class Account < ApplicationRecord
+  normalizes :billing_email, with: -> { it.presence }
+end
+```
