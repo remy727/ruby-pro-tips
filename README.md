@@ -1,4 +1,4 @@
-# Ruby Pro Tips
+# Ruby on Rails Pro Tips
 
 ### Use `Time#getutc` instead of `Time#utc`
 ```rb
@@ -50,7 +50,7 @@ class User < ApplicationRecord
 end
 ```
 
-###
+### Use `normalizes` and `.presence` to convert empty Strings to nil for consistency. [Post](https://x.com/excid3/status/1876748745771028796)
 ```rb
 class Account < ApplicationRecord
   normalizes :billing_email, with: -> { it.presence }
